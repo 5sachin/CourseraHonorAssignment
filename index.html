@@ -11,47 +11,39 @@
     <link rel="stylesheet" href="././node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="./node_modules/bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	<title>Book Reading</title>
 </head>
 <body>
     <!-- HEADER -->
-    <header>
         <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
             <div class="container">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <a class="navbar-brand ml-auto" href="#"><img src="images/logo.png" height="30" width="41"> <input type="text" placeholder="Search by Title or Author.." name="searchbook"></a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a href="#" class="nav-link">
+                        <span class="fa fa-home fa-lg"></span> Home</a></li>
 
-                    <a class="navbar-brand mr-auto" href="#"><img src="images/logo.png" height="30" width="41"></a>
-                    <input class="nav-link" style="width: 60%;" type="text" name="search" placeholder="Search by Title, Author...">
+                    <li class="nav-item"><a href="./aboutus.html" class="nav-link">    <span class="fa fa-info fa-lg"></span> About</a></li>
+                
+                    <li class="nav-item"><a href="./contactus.html" class="nav-link">
+                        <span class="fa fa-address-card fa-lg"></span> Contact</a></li>
+                </ul>
+                <span class="navbar-text">
+                    <a id="loginButton" role="modal">
+                    <span class="fa fa-sigin"></span>Login
+                </a>
+                </span>
+            </div>
+        </div>
+    </nav>   
 
-                    <div class="collapse navbar-collapse" id="Navbar">
-
-                        <ul class="navbar-nav mr-auto">
-
-                            <li class="nav-item active"><a href="#" class="nav-link"><span class="fa fa-home fa-lg"></span> Home</a></li>
-
-                            <li class="nav-item"><a href="./aboutus.html" class="nav-link"><span class="fa fa-info fa-lg"></span> About </a></li>
-
-                            <!-- <li class="nav-item"><input class="nav-link input-lg" type="text" name="search" placeholder="Search by Title, Author"></li> -->
-
-                            <li class="nav-item"><a href="./contactus.html" class="nav-link"><span class="fa fa-address-card fa-lg"></span>  Contacts</a></li>
-
-                        </ul>
-                        <span class="navbar-text">
-                            <a id="loginButton" role="modal">
-                                <span class="fa fa-sigin"></span>Login
-                            </a>
-                        </span>
-                    </div>
-                </div>
-            </nav>        
-    </header>
     <!-- HEADER ENDS HERE -->
     <!-- MAIN CONTENT -->
-    <div class="container-fluid">
-    	<div class="row row-content">
+<div class="container-fluid">
+    <div class="row row-content">
             <div class="col">
                 <div id="mycarousel" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner" role="listbox">
@@ -99,310 +91,203 @@
             </div>
         </div>
         <div class="row row-content">
-            <h4>Horror</h4>
-            <div class="scrolling-wrapper row flex-row col-12 flex-nowrap">
-                <div class="col-6 col-md-3 col-sm-6 col-xs-12">
+            <h3 style="padding-left: 5px;">Horror</h3>
+            <div class="scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4">
+                <div class="col-12 col-md-4 col-xl-2 col-sm-12">
                     <div class="card card-block">
-                        <div class="card-header">
-                            <h1>Harry Potter</h1>
-                        </div>
+                        <img class="img-top" src="images/horror1.jpeg">
                         <div class="card-body">
-                            <div class="card-img-top img-fluid">
-                                <img src="images/horror1.jpeg" class="card-img-top embed-responsive-item">
-                            </div>
+                            <h2 class="card-title">The Amitville Horror</h2>
                         </div>
                     </div>
                 </div>
-                <div class="col-6 col-md-3 col-sm-6 col-xs-12">
+                <div class="col-12 col-md-4 col-xl-2 col-sm-12">
                     <div class="card card-block">
-                        <div class="card-header">
-                            <h1>IT</h1>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-img-top img-fluid">
-                                <img src="images/horror2.jpg" class="card-img-top embed-responsive-item">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3 col-sm-6">
-                    <div class="card card-block">
-                        <div class="card-header">
-                            <h1>The AmityVille Horror</h1>
-
-                        </div>
-                        <div class="card-body">
-                            <div class="card-img-top img-fluid">
-                                <img src="images/horror3.jpg" class="card-img-top embed-responsive-item">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3 col-sm-6">
-                    <div class="card card-block">
-                        <div class="card-header">
-                            <h1>The Green Room</h1>
-
-                        </div>
-                        <div class="card-body">
-                            <div class="card-img-top img-fluid">
-                                <img src="images/horror4.webp" class="card-img-top embed-responsive-item">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3 col-sm-6">
-                    <div class="card card-block">
-                        <div class="card-header">
-                            <h1>Asyum</h1>
-
-                        </div>
-                        <div class="card-body">
-                            <div class="card-img-top img-fluid">
-                                <img src="images/horror5.jpg" class="card-img-top embed-responsive-item">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3 col-sm-5">
-                    <div class="card card-block">
-                        <div class="card-header">
-                            <h1>The AmityVille Horror</h1>
-
-                        </div>
-                        <div class="card-body">
-                            <div class="card-img-top img-fluid">
-                                <img src="images/horror3.jpg" class="card-img-top embed-responsive-item">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row row-content">
-            <h4>Fantasy</h4>
-            <div class="scrolling-wrapper row flex-row col-12 flex-nowrap">
-                <div class="col-6 col-md-3 col-sm-6 col-xs-12">
-                    <div class="card card-block">
-                        <div class="card-header">
-                            <h1>The Land Of Faes</h1>
-
-                        </div>
-                        <div class="card-body">
-                            <div class="card-img-top img-fluid">
-                                <img src="images/fantasy1.jpg" class="card-img-top embed-responsive-item">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3 col-sm-6 col-xs-12">
-                    <div class="card card-block">
-                        <div class="card-header">
-                            <h1>Lion Shifter</h1>
-
-                        </div>
-                        <div class="card-body">
-                            <div class="card-img-top img-fluid">
-                                <img src="images/fantasy2.jpg" class="card-img-top embed-responsive-item">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3 col-sm-6">
-                    <div class="card card-block">
-                        <div class="card-header">
-                            <h1>Huntress</h1>
-
-                        </div>
-                        <div class="card-body">
-                            <div class="card-img-top img-fluid">
-                                <img src="images/fantasy3.jpg" class="card-img-top embed-responsive-item">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3 col-sm-6">
-                    <div class="card card-block">
-                        <div class="card-header">
-                            <h1>The Begning</h1>
-
-                        </div>
-                        <div class="card-body">
-                            <div class="card-img-top img-fluid">
-                                <img src="images/fantasy4.jpg" class="card-img-top embed-responsive-item">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3 col-sm-6">
-                    <div class="card card-block">
-                        <div class="card-header">
-                            <h1>The Land Of Faes</h1>
-
-                        </div>
-                        <div class="card-body">
-                            <div class="card-img-top img-fluid">
-                                <img src="images/fantasy1.jpg" class="card-img-top embed-responsive-item">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3 col-sm-5">
-                    <div class="card card-block">
-                        <div class="card-header">
-                            <h1>Lion Shifter</h1>
-
-                        </div>
-                        <div class="card-body">
-                            <div class="card-img-top img-fluid">
-                                <img src="images/fantasy2.jpg" class="card-img-top embed-responsive-item">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row row-content">
-            <h4>Action</h4>
-            <div class="scrolling-wrapper row flex-row col-12 flex-nowrap">
-                <div class="col-6 col-md-3 col-sm-6 col-xs-12">
-                    <div class="card card-block">
-                        <div class="card-header">
-                            <h1>A Civil Action</h1>
-
-                        </div>
-                        <div class="card-body">
-                            <div class="card-img-top img-fluid">
-                                <img src="images/action.jpg" class="card-img-top embed-responsive-item">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3 col-sm-6 col-xs-12">
-                    <div class="card card-block">
-                        <div class="card-header">
-                            <h1>City Of Bones</h1>
-
-                        </div>
-                        <div class="card-body">
-                            <div class="card-img-top img-fluid">
-                                <img src="images/action2.jpg" class="card-img-top embed-responsive-item">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3 col-sm-6">
-                    <div class="card card-block">
-                        <div class="card-header">
-                            <h1>Divergent</h1>
-
-                        </div>
-                        <div class="card-body">
-                            <div class="card-img-top img-fluid">
-                                <img src="images/action3.jpg" class="card-img-top embed-responsive-item">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3 col-sm-6">
-                    <div class="card card-block">
-                        <div class="card-header">
-                            <h1>The Eyes OF Mind</h1>
-
-                        </div>
-                        <div class="card-body">
-                            <div class="card-img-top img-fluid">
-                                <img src="images/action4.jpeg" class="card-img-top embed-responsive-item">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3 col-sm-6">
-                    <div class="card card-block">
-                        <div class="card-header">
-                            <h1>Divergent</h1>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-img-top img-fluid">
-                                <img src="images/action3.jpg" class="card-img-top embed-responsive-item">
-                            </div>
-                        </div>
-                    </div>
                     
+                    <img class="img-top" src="images/horror2.jpg">
+                    
+                    <div class="card-body">
+                        <h2 class="card-title">IT</h2>
+                    </div>
                 </div>
-                <div class="col-6 col-md-3 col-sm-5">
-                    <div class="card card-block">
-                        <div class="card-header">
-                            <h1>A Civil Action</h1>
-
-                        </div>
+            </div>
+            <div class="col-12 col-md-4 col-xl-2 col-sm-12">
+                <div class="card card-block">
+                    <img class="img-top" src="images/horror3.jpg">
+                    <div class="card-body">
+                        <h2 class="card-title">The Amitville Horror</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-xl-2 col-sm-12">
+                <div class="card card-block">
+                    <img class="img-top" src="images/horror4.webp">
                         <div class="card-body">
-                            <div class="card-img-top img-fluid">
-                                <img src="images/action.jpg" class="card-img-top embed-responsive-item">
+                            <h2 class="card-title">The Green Room</h2>
+                        </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-xl-2 col-sm-12">
+                <div class="card card-block">
+                    <img class="img-top" src="images/action3.jpg">
+                    <div class="card-body">
+                        <h2 class="card-title">Divergent</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-xl-2 col-sm-12">
+                <div class="card card-block">
+                    <img class="img-top" src="images/horror5.jpg">
+                        <div class="card-body">
+                            <div class="card-title">
+                                    <h2>Asylum</h2>
                             </div>
                         </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-xl-2 col-sm-12">
+                <div class="card card-block">
+                    <img class="img-top" src="images/horror4.webp">
+                        <div class="card-body">
+                            <h2 class="card-title">The Green Room</h2>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row row-content">
+            <h3 style="padding-left: 5px;">Fantasy</h3>
+            <div class="scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4">
+                <div class="col-12 col-md-4 col-xl-2 col-sm-12">
+                    <div class="card card-block">
+                        <img class="img-top" src="images/fantasy1.jpg">
+                        <div class="card-body">
+                            <h2 class="card-title">The Land Of Faes</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-xl-2 col-sm-12">
+                    <div class="card card-block">
+                    
+                    <img class="img-top" src="images/fantasy2.jpg">
+                    
+                    <div class="card-body">
+                        <h2 class="card-title">Lion Shifter</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-xl-2 col-sm-12">
+                <div class="card card-block">
+                    <img class="img-top" src="images/fantasy3.jpg">
+                    <div class="card-body">
+                        <h2 class="card-title">Huntress</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-xl-2">
+                <div class="card card-block">
+                    <img class="img-top" src="images/fantasy4.jpg">
+                        <div class="card-body">
+                            <h2 class="card-title">The Begning</h2>
+                        </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-xl-2">
+                <div class="card card-block">
+                    <img class="img-top" src="images/fantasy1.jpg">
+                        <div class="card-body">
+                            <div class="card-title">
+                                    <h2>The Land Of Faes</h2>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-xl-2">
+                <div class="card card-block">
+                    <img class="img-top" src="images/horror5.jpg">
+                        <div class="card-body">
+                            <div class="card-title">
+                                    <h2>Asylum</h2>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-xl-2 col-sm-12">
+                <div class="card card-block">
+                    <img class="img-top" src="images/horror3.jpg">
+                    <div class="card-body">
+                        <h2 class="card-title">The Amitville Horror</h2>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row row-content">
-            <h4>Sci-Fi</h4>
-            <div class="scrolling-wrapper row flex-row col-12 flex-nowrap">
-                <div class="col-6 col-md-3 col-sm-6 col-xs-12">
+    </div>
+    <div class="row row-content">
+            <h3 style="padding-left: 5px;">Action</h3>
+            <div class="scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4">
+                <div class="col-12 col-md-4 col-xl-2 col-sm-12">
                     <div class="card card-block">
-                        <div class="card-header">
-                            <h1>Lion Shifter</h1>
-
-                        </div>
+                        <img class="img-top" src="images/action.jpg">
                         <div class="card-body">
-                            <div class="card-img-top img-fluid">
-                                <img src="images/fantasy2.jpg" class="card-img-top embed-responsive-item">
-                            </div>
+                            <h2 class="card-title">A Civil Action</h2>
                         </div>
                     </div>
                 </div>
-                <div class="col-6 col-md-3 col-sm-6 col-xs-12">
+                <div class="col-12 col-md-4 col-xl-2 col-sm-12">
                     <div class="card card-block">
-                        <div class="card-header">
-                            <h1>The Land Of Faes</h1>
-
-                        </div>
-                        <div class="card-body">
-                            <div class="card-img-top img-fluid">
-                                <img src="images/fantasy1.jpg" class="card-img-top embed-responsive-item">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3 col-sm-6">
-                    <div class="card card-block">
-                        <div class="card-header">
-                            <h1>A Civil Action</h1>
-
-                        </div>
-                        <div class="card-body">
-                            <div class="card-img-top img-fluid">
-                                <img src="images/action.jpg" class="card-img-top embed-responsive-item">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3 col-sm-6">
-                    <div class="card card-block">
-                        <div class="card-header">
-                            <h1>A Civil Action</h1>
-
-                        </div>
-                        <div class="card-body">
-                            <div class="card-img-top img-fluid">
-                                <img src="images/action.jpg" class="card-img-top embed-responsive-item">
-                            </div>
-                        </div>
+                    
+                    <img class="img-top" src="images/action2.jpg">
+                    
+                    <div class="card-body">
+                        <h2 class="card-title">City Of Bones</h2>
                     </div>
                 </div>
             </div>
-        </div>	
-    </div>
+            <div class="col-12 col-md-4 col-xl-2 col-sm-12">
+                <div class="card card-block">
+                    <img class="img-top" src="images/action3.jpg">
+                    <div class="card-body">
+                        <h2 class="card-title">Divergent</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-xl-2">
+                <div class="card card-block">
+                    <img class="img-top" src="images/action4.jpeg">
+                        <div class="card-body">
+                            <h2 class="card-title">The Eyes of Mind</h2>
+                        </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-xl-2">
+                <div class="card card-block">
+                    <img class="img-top" src="images/fantasy1.jpg">
+                        <div class="card-body">
+                            <div class="card-title">
+                                    <h2>The Land Of Faes</h2>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-xl-2">
+                <div class="card card-block">
+                    <img class="img-top" src="images/fantasy4.jpg">
+                        <div class="card-body">
+                            <h2 class="card-title">The Begning</h2>
+                        </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-xl-2 col-sm-12">
+                <div class="card card-block">
+                    <img class="img-top" src="images/horror3.jpg">
+                    <div class="card-body">
+                        <h2 class="card-title">The Amitville Horror</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+</div>
 <!-- MAIN CONTENTS END HERE -->
 <!-- FOOTER -->
     <footer class="footer">
