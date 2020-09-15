@@ -73,7 +73,9 @@ body{
   background: #fff; }
 
 .modal .modal-header {
-  background: #0059b3; }
+  background: #0059b3; 
+}
+
 
 h1,h2,p {
   color: white;
