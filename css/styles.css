@@ -90,7 +90,7 @@ h1, h2 ,p {
 
 .scrolling-wrapper{
   overflow-x: auto;
-  width: 100%;
+  width: 95%;
 }
 
 .card-block{
