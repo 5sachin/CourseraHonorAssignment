@@ -19,13 +19,12 @@
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand mr-auto" href="#">
+            </button> 
+            <a class="navbar-brand ml-auto" href="#">
                 <img src="images/logo.png" height="30" width="41">
-                <input type="text" placeholder="Search by Title or Author.." name="searchbook">
             </a>
             <div class="collapse navbar-collapse" id="Navbar">
-                <ul class="navbar-nav mr-auto">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                         <a href="#" class="nav-link">
                             <span class="fa fa-home fa-lg">
@@ -42,6 +41,13 @@
                         <a href="./contactus.html" class="nav-link">
                             <span class="fa fa-address-card fa-lg">
                             </span> Contact
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a>
+                        
+                        <input type="text" placeholder="Search by Title or Author.." name="searchbook" aria-label="Search">
+                            
                         </a>
                     </li>
                     <li class="nav-item">
@@ -66,24 +72,22 @@
                     <form>
                         <div class="form-row justify-content-center">
                             <div class="form-group col-sm-6">
-                                <label for="emailInput" class="sr-only">Email Id: </label>
                                 <input type="email" class="form-control form-control-sm mr-1" id="emailInput" placeholder="Enter Email Id">
                             </div>
                         </div>
                         <div class="form-row justify-content-center">
                             <div class="form-group col-sm-6">
-                                <label for="passwordInput" class="sr-only">Password: </label>
                                 <input type="password" id="passwordInput" class="form-control form-control-sm mr-1" placeholder="Enter Password">
                             </div>
                         </div>
                         <div class="form-row justify-content-center">
                             <div class="form-group col-sm-6">
-                                <button type="button" class="btn btn-primary form-control">Log In</button>
+                                <button type="button" id="openProfile" class="btn btn-primary form-control">Log In</button>
                             </div>
                         </div>
                         <div class="form-row justify-content-center">
                             <div class="form-group col-sm-6">
-                                <button type="button" class="btn btn-primary form-control">Create Account</button>
+                                <button type="button" id="createaccountBtn" class="btn btn-primary form-control">Create Account</button>
                             </div>
                         </div>
                         <div class="form-row justify-content-center">
@@ -94,6 +98,64 @@
                     </form>
                 </div>
             </div>
+        </div>
+    </div>
+    <div id="newaccountmodal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>Create New Account</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                <label for="fullName"><h5>Name</h5></label>
+                            </div>
+                            <div class="form-group col-sm-3">
+                                <input type="email" class="form-control form-control-sm mr-1" id="inputEmail" placeholder="First Name">
+                            </div>
+                            <div class="form-group col-sm-3">
+                                <input type="email" class="form-control form-control-sm mr-1" id="inputEmail" placeholder="Last Name">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                <label for="inputEmail"><h5>Email Id</h5>
+                                </label>
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <input type="email" class="form-control form-control-sm mr-1" id="inputEmail" placeholder="Enter Email">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                <label for="inputPassword"><h5>Password</h5>
+                                </label>
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <input type="email" class="form-control form-control-sm mr-1" id="inputPassword" placeholder="Enter password">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                <label for="inputCnfmPassword"><h5>Confirm Password</h5>
+                                </label>
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <input type="email" class="form-control form-control-sm mr-1" id="inputCnfmPassword" placeholder="Enter password">
+                            </div>
+                        </div>
+                        <div class="form-row justify-content-center">
+                            <div class="form-group">
+                                <button type="button" class="btn btn-primary" id="submit form-control">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
         </div>
     </div> 
 

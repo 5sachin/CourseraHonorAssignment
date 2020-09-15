@@ -82,8 +82,9 @@ h1,h2,p {
   font-size: 1em;
 }
 
-
-
+main{
+  padding-top: 10px;
+}
 .input-lg{
   width: 200px;
 }

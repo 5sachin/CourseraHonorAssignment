@@ -16,4 +16,12 @@ $(document).ready(function() {
 	$('#loginButton').click(function(){
 		$('#loginModal').modal("show");
 	})
-})
+
+	$('#createaccountBtn').click(function(){
+		$('#loginModal').modal("hide");
+		$('#newaccountmodal').modal("show");
+
+	})
+
+	$('#openProfile').load("profile.html");
+});
